@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for("filename='css/bootstrap.min.css') }}>//download bootstrap and change the href
+</head>
+    <body><center>
+    <form method="post" action="{{ url_for('result') }}">
+    <div class="form-group">
+      
+    </div>
+	
+	<div class="form-group">
+      
+	  </div>
+	  
+	<div class="form-group">
+    </div>
+	
+    <div class="form-group">
+    </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+		{% if result %}
+            Result is: {{ result }}
+        {% endif %}
+    </form>
+    </body>
+</html>
